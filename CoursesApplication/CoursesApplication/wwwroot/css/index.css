@@ -1,0 +1,17 @@
+﻿html,
+body,
+.body-content,
+.login-content {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.login-content {
+    background-color: #ffd800;
+}
+
+.login-container {
+    float: left;
+    width: 50%;
+}
