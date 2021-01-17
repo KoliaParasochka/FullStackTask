@@ -83,3 +83,59 @@ body,
 .field-validation-msg {
     color: white;
 }
+
+header {
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: #343A40;
+}
+
+header .header-title {
+    float: left;
+    margin-top: 10px;
+    padding-left: 20px;
+    width: 30%;
+}
+
+.header-title h5,
+menu h6 {
+    color: #e9e9e9;
+}
+
+header menu {
+    float: right;
+    width: 70%;
+    height: 100%;
+}
+
+menu h6 {
+    float: right;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+menu {
+    margin: 0;
+}
+
+.logout-btn {
+    float: right;
+    padding: 6px 15px;
+    border-radius: 5px;
+    background-color: #FFA520;
+    color: #20252B;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+main {
+    height: calc(100% - 20px);
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    background-color: #343A40;
+}

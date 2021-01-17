@@ -6,11 +6,16 @@
 
   <ItemGroup>
     <Folder Include="Courses\" />
-    <Folder Include="Account\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoursesApplication.Interfaces\CoursesApplication.Interfaces.csproj" />
     <ProjectReference Include="..\CoursesApplication.Models\CoursesApplication.Models.csproj" />
+    <ProjectReference Include="..\CoursesApplication.Repositories\CoursesApplication.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

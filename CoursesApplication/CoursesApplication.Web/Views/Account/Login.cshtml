@@ -21,9 +21,10 @@
             </div>
             @Html.PasswordFor(m => m.Password, new { @placeholder = "Password" })
             @Html.ValidationMessageFor(m => m.Password, "", new { @class = "field-validation-msg" })
+            <span class="field-validation-msg">@ViewBag.ErrorMsg</span>
         </div>
         <div class="form-item">
-            <input type="submit" value="Войти" />
+            <input type="submit" value="Sign in" />
         </div>
     }
 </div>

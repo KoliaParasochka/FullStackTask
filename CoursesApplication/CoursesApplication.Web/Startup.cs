@@ -1,6 +1,8 @@
+using CoursesApplication.Interfaces.Services;
 using CoursesApplication.Models.Configuration;
 using CoursesApplication.Models.Database;
 using CoursesApplication.Repositories.ApplicationContexts;
+using CoursesApplication.Services.Account;
 using CoursesApplication.Services.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -39,6 +41,7 @@ namespace CoursesApplication
                 .AddEntityFrameworkStores<IdentityContext>();
 
             services.AddTransient<IdentityContext>();
+            services.AddTransient<IUserService, UserService>();
 
             services.AddMvc();
         }
