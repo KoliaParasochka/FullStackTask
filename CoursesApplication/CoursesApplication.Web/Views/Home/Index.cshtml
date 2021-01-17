@@ -1,4 +1,7 @@
-﻿@{
+﻿@using CoursesApplication.Models.Database
+@model CoursesApplication.Models.View.CourseModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -13,6 +16,68 @@
     </menu>
 </header>
 <main>
+    <div class="course-section">
+        @foreach (Course el in ViewBag.Courses)
+        {
+            <div class="course-item">
+                <span><b>Название курса:</b> @el.Name</span>
+                <span><b>Описание:</b> @el.Description</span>
+                <span><b>Цена:</b> @el.Price$</span>
+            </div>
+        }
+        <div class="wrap">
+            <button class="btn">
+                Создайте первый курс!
+            </button>
+        </div>
+        <div class="modal">
+            <div class="modal_title">
+                Создать курс
+            </div>
+            <div class="modal_container">
+                @using (Html.BeginForm("Create", "Home", method: FormMethod.Post, new { @class = "course-form" }))
+                {
+                    <div class="course-field">
+                        @Html.TextBoxFor(m => m.Name, new { @placeholder = "Course name" })
+                        @Html.ValidationMessageFor(m => m.Name, "", new { })
+                    </div>
+                    <div class="course-field">
+                        @Html.TextAreaFor(m => m.Description, new { @placeholder = "Description..." })
+                        @Html.ValidationMessageFor(m => m.Description, "", new { })
+                        <span class="field-validation-msg">@ViewBag.ErrorMsg</span>
+                    </div>
+                    <div class="course-field">
+                        @Html.TextBoxFor(m => m.Price, new { @type = "number", @placeholder = "Price" })
+                        @Html.ValidationMessageFor(m => m.Price, "", new { })
+                        <span class="field-validation-msg">@ViewBag.ErrorMsg</span>
+                    </div>
+                    <div class="course-field">
+                        @Html.TextBoxFor(m => m.DayOfWeek, new { @placeholder = "Day of week"  })
+                        @Html.ValidationMessageFor(m => m.Price, "", new { })
+                        <span class="field-validation-msg">@ViewBag.ErrorMsg</span>
+                    </div>
+                    <div class="course-field">
+                        @Html.TextBoxFor(m => m.TimeStart, new { @type = "time", @placeholder = "Time start" })
+                        @Html.ValidationMessageFor(m => m.Price, "", new { })
+                        <span class="field-validation-msg">@ViewBag.ErrorMsg</span>
+                    </div>
+                    <div class="course-field">
+                        @Html.TextBoxFor(m => m.TimeEnd, new { @type = "time", @placeholder = "Time start" })
+                        @Html.ValidationMessageFor(m => m.Price, "", new { })
+                        <span class="field-validation-msg">@ViewBag.ErrorMsg</span>
+                    </div>
+                    <div class="course-form-buttons">
+                        <input type="submit" value="Создать" />
+                        <a href="~/Home/Remove/id=" class="remove-btn">Удалить</a>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="modal_bg"></div>
+    </div>
+    <div class="scedule-section">
+
+    </div>
 
 </main>
 <footer>
