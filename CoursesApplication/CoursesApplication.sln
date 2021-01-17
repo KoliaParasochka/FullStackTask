@@ -5,13 +5,15 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursesApplication", "CoursesApplication\CoursesApplication.csproj", "{1DF7A08B-8B1F-49E0-B76C-C87C7BC469FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursesApplication.Interfaces", "CoursesApplication.Interfaces\CoursesApplication.Interfaces.csproj", "{F96F80F7-B8C4-43EB-A1EB-1E7647B1551C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursesApplication.Interfaces", "CoursesApplication.Interfaces\CoursesApplication.Interfaces.csproj", "{F96F80F7-B8C4-43EB-A1EB-1E7647B1551C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursesApplication.Services", "CoursesApplication.Services\CoursesApplication.Services.csproj", "{16C9393A-EE15-4D87-935E-BB9532257A70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursesApplication.Services", "CoursesApplication.Services\CoursesApplication.Services.csproj", "{16C9393A-EE15-4D87-935E-BB9532257A70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursesApplication.Repositories", "CoursesApplication.Repositories\CoursesApplication.Repositories.csproj", "{F1167E4C-7904-4ECD-9694-5F0B24A6D628}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursesApplication.Repositories", "CoursesApplication.Repositories\CoursesApplication.Repositories.csproj", "{F1167E4C-7904-4ECD-9694-5F0B24A6D628}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursesApplication.Models", "CoursesApplication.Models\CoursesApplication.Models.csproj", "{3321985D-62A0-4FCC-96DA-954E804B29BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursesApplication.Models", "CoursesApplication.Models\CoursesApplication.Models.csproj", "{3321985D-62A0-4FCC-96DA-954E804B29BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursesApplication.Web", "CoursesApplication.Web\CoursesApplication.Web.csproj", "{330D47EE-A4BA-4C0D-8AEE-4690D8A35595}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3321985D-62A0-4FCC-96DA-954E804B29BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3321985D-62A0-4FCC-96DA-954E804B29BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3321985D-62A0-4FCC-96DA-954E804B29BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330D47EE-A4BA-4C0D-8AEE-4690D8A35595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330D47EE-A4BA-4C0D-8AEE-4690D8A35595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330D47EE-A4BA-4C0D-8AEE-4690D8A35595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330D47EE-A4BA-4C0D-8AEE-4690D8A35595}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,29 @@
+﻿@model CoursesApplication.Models.View.Login
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="login-content">
+
+    @using (Html.BeginForm("Login", "Account", method: FormMethod.Post, new { @class = "login-container" }))
+    {
+        <div class="form-item">
+            <div class="input-icon">
+                <img src="~/icons/person1.png" />
+            </div>
+            @Html.TextBoxFor(m => m.Email, new { @placeholder = "My name is" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "field-validation-msg" })
+        </div>
+        <div class="form-item">
+            <div class="input-icon">
+                <img src="~/icons/password1.png" />
+            </div>
+            @Html.PasswordFor(m => m.Password, new { @placeholder = "Password" })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "field-validation-msg" })
+        </div>
+        <div class="form-item">
+            <input type="submit" value="Войти" />
+        </div>
+    }
+</div>
